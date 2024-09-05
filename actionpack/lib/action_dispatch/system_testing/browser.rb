@@ -62,6 +62,7 @@ module ActionDispatch
           configure do |capabilities|
             capabilities.add_argument("--headless")
             capabilities.add_argument("--disable-gpu") if Gem.win_platform?
+            capabilities.add_argument("--disable-search-engine-choice-screen")
           end
         end
 
